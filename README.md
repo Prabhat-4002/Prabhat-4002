@@ -18,17 +18,17 @@ export default function SchoolAppUI() {
           <h2 className="text-2xl font-bold text-center mb-4">Principal Login</h2>
           <div className="mb-4">
             <Label>Email</Label>
-            <Input type="email" placeholder="Enter your email" className="mt-1" />
+            <Input type="email" placeholder="acharyaprabhatbaliya@gmail.com" className="mt-1" />
           </div>
           <div className="mb-4">
             <Label>Password</Label>
-            <Input type="password" placeholder="Enter your password" className="mt-1" />
+            <Input type="password" placeholder="1234567" className="mt-1" />
           </div>
           <Button className="w-full mt-4 bg-blue-600 hover:bg-blue-500">Login</Button>
         </Card>
       </motion.div>
 
-      {/* Dashboard */}
+      {/* Dashboard Button */}
       <motion.div
         className="grid grid-cols-2 gap-4 mt-10 max-w-md"
         initial={{ opacity: 0, y: 20 }}
@@ -50,8 +50,6 @@ export default function SchoolAppUI() {
     </div>
   );
 }
-
-  {/* Dashboard */}
   <motion.div
     className="grid grid-cols-2 gap-4 mt-10 max-w-md"
     initial={{ opacity: 0, y: 20 }}
