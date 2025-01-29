@@ -51,3 +51,23 @@ export default function SchoolAppUI() {
   );
 }
 
+  {/* Dashboard */}
+  <motion.div
+    className="grid grid-cols-2 gap-4 mt-10 max-w-md"
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+  >
+    {[
+      "Student Management",
+      "Teacher Management",
+      "Attendance System",
+      "Result Sheet",
+      "Fee Management",
+      "Announcements",
+    ].map((item, index) => (
+      <Card key={index} className="p-4 bg-gray-800 rounded-xl text-center cursor-pointer hover:bg-blue-700">
+        {item}
+      </Card>
+    ))}
+  </motion.div>
+</div>
